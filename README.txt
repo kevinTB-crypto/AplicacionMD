@@ -1,10 +1,12 @@
-Proyecto: Practica 6 KivyMD
+# AplicacionMD
 
-Para ejecutar:
+Sistema de gestión de usuarios con Python.
 
-1. Instalar Python
-2. Instalar KivyMD:
-pip install kivymd
+## Funciones
+- Registro de usuarios
+- Base de datos SQLite
+- Interfaz simple
 
-3. Ejecutar:
-python main.py
+## Instalación
+```bash
+pip install -r requirements.txt

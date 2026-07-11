@@ -116,7 +116,10 @@ class Pantalla1(MDScreen):
         pantalla2 = self.manager.get_screen("pantalla2")
 
         pantalla2.ids_label.text = (
-            f"Hola {nombre}\n" f"Tienes {edad} años\n" f"Categoría: {categoria}"
+            f"Bienvenido {nombre}\n\n"
+            f"Edad: {edad} años\n"
+            f"Clasificación: {categoria}\n\n"
+            f"Registro guardado correctamente."
         )
 
         self.manager.current = "pantalla2"

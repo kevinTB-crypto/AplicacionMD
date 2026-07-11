@@ -68,9 +68,17 @@ class Pantalla1(MDScreen):
             text="Registro de Usuario", halign="center", font_style="H4"
         )
 
-        self.nombre = MDTextField(hint_text="Ingrese su nombre")
+        self.nombre = MDTextField(
+            hint_text="Ingrese su nombre",
+            helper_text="Escriba su nombre completo",
+            helper_text_mode="on_focus"
+        )
 
-        self.edad = MDTextField(hint_text="Ingrese su edad")
+        self.edad = MDTextField(
+            hint_text="Ingrese su edad",
+            helper_text="Solo números",
+            helper_text_mode="on_focus"
+        )
 
         self.boton = MDRaisedButton(
             text="Validar y Continuar",

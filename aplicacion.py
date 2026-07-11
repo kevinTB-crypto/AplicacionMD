@@ -144,7 +144,8 @@ class Pantalla2(MDScreen):
 
 class MiApp(MDApp):
     def build(self):
-        self.theme_cls.primary_palette = "Blue"
+        self.theme_cls.primary_palette = "Green"
+        self.theme_cls.theme_style = "Light"
 
         crear_db()
 

@@ -97,7 +97,9 @@ class Pantalla1(MDScreen):
             Snackbar(text="La edad debe ser número").open()
             return
 
-        edad = int(edad)
+        if edad < 0 or edad > 120:
+            Snackbar(text="Ingrese una edad válida").open()
+            return
 
         categoria = clasificar_edad(edad)
 
